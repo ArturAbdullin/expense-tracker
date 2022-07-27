@@ -1,6 +1,6 @@
 import React from "react";
 import ExpenseDate from "./ExpenseDate";
-import Card from "./Card";
+import Card from "../UI/Card";
 import "./ExpenseItem.css";
 
 interface ExpenseItemProps extends React.HTMLAttributes<JSX.Element> {
