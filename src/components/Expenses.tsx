@@ -1,5 +1,6 @@
 import React from "react";
 import ExpenseItem from "./ExpenseItem";
+import Card from "./Card";
 import "./Expenses.css";
 
 interface ExpensesProps extends React.HTMLAttributes<JSX.Element> {
@@ -14,7 +15,7 @@ interface ExpensesProps extends React.HTMLAttributes<JSX.Element> {
 function Expenses(props: ExpensesProps): JSX.Element {
   const data = props.data;
   return (
-    <div className="expenses">
+    <Card className="expenses">
       <ExpenseItem
         title={data[0].title}
         amount={data[0].amount}
@@ -35,7 +36,7 @@ function Expenses(props: ExpensesProps): JSX.Element {
         amount={data[3].amount}
         date={data[3].date}
       />
-    </div>
+    </Card>
   );
 }
 
